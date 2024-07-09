@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+h2.link-card {
+    text-align: center;
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 80%;
+    height: 100vh;
+    background-color:#101820;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.bio {
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+}
+.links {
+    list-style: none;
+}
+.links li {
+    margin: 10px;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #EAE7D6;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.links a {
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color:#D7F9FA;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 0.3em;
+}
+.dot {
+    width: 2px;
+    height: 2px;
+    background-color: #fff; /* White dots */
+    border-radius: 50%;
+    position: absolute;
+}
+.rocket {
+    width: 50px;
+    height: 100px;
+    background: url('Rocket.png') no-repeat center center; 
+    background-size: contain;
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    cursor: pointer;
+    transition: opacity 1s ease-out;
+}
+.rocket:hover {
+    animation: shake 0.5s linear infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(2deg); }
+    50% { transform: translate(-2px, 2px) rotate(-2deg); }
+    75% { transform: translate(2px, 2px) rotate(2deg); }
+    100% { transform: translate(-2px, -2px) rotate(-2deg); }
+}
+@keyframes launchRocket {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    10% {
+        transform: translate(10vw, -10vh) rotate(10deg);
+    }
+    30% {
+        transform: translate(30vw, -30vh) rotate(20deg);
+    }
+    50% {
+        transform: translate(50vw, -50vh) rotate(30deg);
+    }
+    70% {
+        transform: translate(70vw, -70vh) rotate(40deg);
+    }
+    100% {
+        transform: translate(100vw, -100vh) rotate(50deg);
+    }
+}
+.links a:hover {
+    background-color: #6666ff;
+}
+ .logo:hover { animation: spin 2s linear infinite; }
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.links a { transition: all 0.5s ease-in-out; }
+
+.links a:hover { transform: scale(1.2); color: white; }
+
+.bio:hover { transform: skew(-10deg); }
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 90vh;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+        
+    }
+    .bio {
+        font-size: 16px;
+        margin: 10px;
+    }
+    .links a {
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+        
+    }
+    .p{
+        text-align: center;
+    }
+    main{
+        padding-bottom: 0.5em;
+    }
+}

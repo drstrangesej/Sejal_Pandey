@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejal Pandey</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+const links = document.getElementById("links");
+for (let link of links.children) {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const url = link.firstElementChild.href;
+        window.open(url, "_blank");
+    });
+}
+    </script>
+</head>
+<body style="background-color:#B0D4B8"> 
+        <div class="container">
+        <p class="bio"></p>
+        <ul class="links">
+            <li><a href="https://chanakyainyou.blogspot.com/2024/07/radhakrishnan-pillai-used-to-visit-his.html">Chanakya in YOU</a></li>
+            <li><a href="https://sejalpanday.blogspot.com/2023/05/the-one-thing-surprisingly-simple-truth.html">The ONE Thing</a></li>
+            <li><a href="https://sejalpandayy.blogspot.com/2023/05/a-bravehearts-diary.html">Voice</a></li>
+            <li><a href="https://goguuu.blogspot.com/2023/06/gogu-resilient-tale-of-abandoned-kitten.html">GoGu</a></li>
+            <li><a href="https://sejal-panday.blogspot.com/2023/05/embracing-unexpected-finding-joy-in.html">Finding JOY in Life</a></li>
+            <li><a href="https://heartfelthealers.blogspot.com/2023/09/take-deep-breathe.html">Take a deep BREATHE !</a></li>
+        </ul>
+        <div class="dot"></div>
+        <script src="script.js"></script>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sejal Pandey . All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
